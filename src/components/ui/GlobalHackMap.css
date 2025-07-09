@@ -1,0 +1,40 @@
+.global-map-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+.map-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  font-weight: bold;
+}
+.map-background {
+  height: 300px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 3s infinite;
+}
+.map-text {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+@keyframes plus {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  }
+    50% {
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }  
+    100% {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+  }
