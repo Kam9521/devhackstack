@@ -1,7 +1,7 @@
 import ThreatPieChart from "./ui/ThreatPieChart";
 import { FaBug, FaLock, FaShieldAlt, FaEnvelope, FaBomb } from "react-icons/fa";
 import React from "react";
-import { Card, CardContent } from "./ui/card.jsx";
+import { Card, CardContent } from "./ui/Card";
 const ThreatDashboard = ({ darkMode }) => {
   const threatStats = {
     active: 8,
