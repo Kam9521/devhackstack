@@ -16,11 +16,11 @@ const CyberBotChat = () => {
     setInput("");
   };
   return (
-    <div className="card shadow p-3 mb-4 bg-white rounded">
+    <div className="card shadow p-3 mb-4 bg-white text-dark dark:bg-zinc-900 dark:text-white rounded">
       <h4 className="mb-3">🤖 CyberBot AI Chat</h4>
       <div
-        className="chat-box border p-3 mb-3"
-        style={{ height: "300px", overflowY: "auto", background: "#f9f9f9" }}
+        className="chat-box border p-3 mb-3 bg-gray-100 dark:bg-zinc-800 text-dark dark:text-white"
+        style={{ height: "300px", overflowY: "auto" }}
       >
         {messages.map((msg, index) => (
           <div
