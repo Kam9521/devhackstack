@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Zamow({ darkMode }) {
   return (
     <div className={'container mt-5 text-$ {darkMode ? "light" : "dark"}'}>
