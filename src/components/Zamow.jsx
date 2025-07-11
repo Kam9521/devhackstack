@@ -39,14 +39,11 @@ function Zamow({ darkMode }) {
       <p className="mb-4">
         <strong>📄 Formularz zamówienia</strong> do pobrania w wersji PDF:
       </p>
-
-     
-
       <p className="mt-6">
         📬 Masz pytania? Przejdź do{" "}
-        <a href="/kontakt" className="text-blue-400 underline">
+        <Link to="/kontakt" className="text-blue-400 underline">
           formularza kontaktowego
-        </a>
+        </Link>
         .
       </p>
       <div className="mt-6 text-center">
