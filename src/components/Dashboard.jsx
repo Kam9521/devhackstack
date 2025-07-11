@@ -1,5 +1,5 @@
 import PerformanceChart from "./PerFormanceChart";
-import CyberBotChat from "./ui/CyberBotChat";
+
 import ExploitSimulator from "./ExploitSimulator";
 import CyberBot from "./CyberBot";
 import ThreatDashboard from "./ThreatDashboard";
@@ -55,7 +55,7 @@ function Dashboard({ darkMode }) {
         <Tools />
         <ThreatDashboard darkMode={darkMode} />
         <CyberBot darkMode={darkMode} />
-        <CyberBotChat />
+
         <ExploitSimulator darkMode={darkMode} />
       </div>
     </div>

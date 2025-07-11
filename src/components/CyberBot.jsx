@@ -1,14 +1,14 @@
-import { Card, CardContent } from "./ui/card";
+
 import { Robot } from "react-bootstrap-icons";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 const CyberBot = ({ darkMode }) => {
   return (
-    <Card
+    <div
       className={`mb-4 shadow-lg border $ {darkMode ? "bg-gray-900 text-white border-gray-700"
          : "bg-white text-dark border-gray-300"}`}
     >
-      <CardContent>
+      <div>
         <div className="flex items-center mb-3">
           <Robot
             size={50}
@@ -23,10 +23,12 @@ const CyberBot = ({ darkMode }) => {
         </p>
         <div className="mt-4 p-3 bg-gray-800 border-1-4 border-green-400 font-mono text-sm text-gray-100 rounded-md">
           <strong className="text-green-400">📣Dziś:</strong> Używaj{" "}
-          <code>nmap -sV</code> do wykrywania usług i wersji oprogramowania.
+          <p>
+            <code>nmap -sV</code> do wykrywania usług i wersji oprogramowania.
+          </p>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 export default CyberBot;
