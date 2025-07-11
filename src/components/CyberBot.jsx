@@ -1,10 +1,11 @@
+import { Card, CardContent } from "./ui/card";
 import { Robot } from "react-bootstrap-icons";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 const CyberBot = ({ darkMode }) => {
   return (
     <Card
-          className={`mb-4 shadow-lg border $ {darkMode ? "bg-gray-900 text-white border-gray-700"
+      className={`mb-4 shadow-lg border $ {darkMode ? "bg-gray-900 text-white border-gray-700"
          : "bg-white text-dark border-gray-300"}`}
     >
       <CardContent>
