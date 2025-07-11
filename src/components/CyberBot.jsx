@@ -4,7 +4,8 @@ import { Card, CardContent } from "./ui/card";
 const CyberBot = ({ darkMode }) => {
   return (
     <Card
-      className={`mb-4 shadow-lg border $ {darkMode ? "bg-gray-900 text-white border-gray-700" : "bg-white text-dark border-gray-300"}`}
+          className={`mb-4 shadow-lg border $ {darkMode ? "bg-gray-900 text-white border-gray-700"
+         : "bg-white text-dark border-gray-300"}`}
     >
       <CardContent>
         <div className="flex items-center mb-3">

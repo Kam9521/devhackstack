@@ -1,3 +1,4 @@
+import PerformanceChart from "./PerFormanceChart";
 import CyberBotChat from "./ui/CyberBotChat";
 import ExploitSimulator from "./ExploitSimulator";
 import CyberBot from "./CyberBot";
@@ -9,11 +10,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Dashboard({ darkMode }) {
   return (
     <div className="min-vh-100">
-      <div className="container mt-5">
+      <div className="container mt-5 px-3" style={{ overflowX: "hidden" }}>
         <h2 className="mb-4">Panel kontrolny</h2>
         <div className="row">
           {/*Users */}
-          <div className="col-md-3 mb-3">
+          <div className="col-12 col-md-3 mb-3">
             <div className="card text-white bg-primary">
               <div className="card-body">
                 <h5 className="card-title">Użytkownicy</h5>
@@ -22,7 +23,7 @@ function Dashboard({ darkMode }) {
             </div>
           </div>
           {/* Senssions */}
-          <div className="col-md-3 mb-3">
+          <div className="col-12 col-md-3 mb-3">
             <div className="card text-white bg-success">
               <div className="card-body">
                 <h5 className="card-title">Sesje</h5>
@@ -31,7 +32,7 @@ function Dashboard({ darkMode }) {
             </div>
           </div>
           {/* Errors */}
-          <div className="col-md-3 mb-3">
+          <div className="col-12 col-md-3 mb-3">
             <div className="card text-white bg-danger">
               <div className="card-body">
                 <h5 className="card-title">Błędy</h5>
@@ -41,11 +42,11 @@ function Dashboard({ darkMode }) {
             </div>
           </div>
           {/* Performance */}
-          <div className="col-md-3 mb-3">
+          <div className="col-12 col-md-3 mb-3">
             <div className="card text-white bg-dark">
-              <div className="card-body">
-                <h5 className="card-title">Wydajność</h5>
-                <p className="card-text">(Wykres w przygotowaniu)</p>
+              <div className="card bg-dark text-light p-3 shadow">
+                <h4>Wydajność</h4>
+                <PerformanceChart />
               </div>
             </div>
           </div>

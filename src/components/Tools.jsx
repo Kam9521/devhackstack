@@ -21,7 +21,7 @@ function Tools() {
             <div className="card-body">
               <h5 className="card-title">Wireshark</h5>
               <p className="card-text">
-                Analizator pakietów - podsłuch ruchu u czasie rzeczywistym.
+                Analizator pakietów - podsłuch ruchu w czasie rzeczywistym.
               </p>
             </div>
           </div>

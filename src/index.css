@@ -24,10 +24,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
 }
 
 h1 {
@@ -68,5 +67,32 @@ button:focus-visible {
 }
 html,
 body {
-  background-color: transparent !important;
+  background-color: transparent;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+body.dark-mode .card,
+body.dark-mode .container,
+body.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+body.dark-mode .text-dark {
+  color: #f0f0f0 !important;
+}
+body.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
 }
