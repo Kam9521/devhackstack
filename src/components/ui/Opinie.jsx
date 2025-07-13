@@ -10,7 +10,9 @@ function Opinie() {
   useEffect(() => {
     const fetchOpinions = async () => {
       try {
-        const response = await fetch("/api/reviews");
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/reviews`
+        );
         const data = await response.json();
         setOpinions(data);
       } catch (err) {
@@ -30,11 +32,14 @@ function Opinie() {
     const newOpinion = { name, comment, rating };
 
     try {
-      const response = await fetch("/api/reviews", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newOpinion),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/reviews`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newOpinion),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Nie udało się dodać opinii.");
