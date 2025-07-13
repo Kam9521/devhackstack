@@ -1,3 +1,6 @@
+import Polityka from "./pages/Polityka.jsx";
+import Opinie from "./components/ui/Opinie.jsx";
+import About from "./components/About.jsx";
 import Zamow from "./components/Zamow.jsx";
 import Informacje from "./components/Informacje.jsx";
 import Contact from "./components/Contact.jsx";
@@ -48,6 +51,16 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/o-mnie">
+                    O mnie
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/opinie">
+                    Opinie
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/kontakt">
                     Kontakt
                   </Link>
@@ -55,6 +68,11 @@ function App() {
                 <li className="nav-item">
                   <Link className="nav-link" to="/zamow">
                     Zamów stronę
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/polityka">
+                    Polityka prywatności
                   </Link>
                 </li>
               </ul>
@@ -74,10 +92,13 @@ function App() {
                 path="/projekty"
                 element={<Projects darkMode={darkMode} />}
               />
+              <Route path="/o-mnie" element={<About />} />
+              <Route path="/polityka" element={<Polityka />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/mapa" element={<GlobalHackMap />} />
               <Route path="/informacje" element={<Informacje />} />
               <Route path="/zamow" element={<Zamow />} />
+              <Route path="/opinie" element={<Opinie />} />
             </Routes>
           </div>
         </div>

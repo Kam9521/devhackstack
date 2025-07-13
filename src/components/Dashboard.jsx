@@ -1,12 +1,13 @@
 import PerformanceChart from "./PerFormanceChart";
-
+import About from "./About";
 import ExploitSimulator from "./ExploitSimulator";
-import CyberBot from "./CyberBot";
+
 import ThreatDashboard from "./ThreatDashboard";
 import Tools from "./Tools";
 import GlobalHackMap from "./GlobalHackMap";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CyberBotChat from "./ui/CyberBotChat";
 function Dashboard({ darkMode }) {
   return (
     <div className="min-vh-100">
@@ -54,7 +55,7 @@ function Dashboard({ darkMode }) {
         <GlobalHackMap />
         <Tools />
         <ThreatDashboard darkMode={darkMode} />
-        <CyberBot darkMode={darkMode} />
+        <CyberBotChat darkMode={darkMode} />
 
         <ExploitSimulator darkMode={darkMode} />
       </div>
