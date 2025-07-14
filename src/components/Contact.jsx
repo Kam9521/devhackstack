@@ -6,7 +6,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    /*
     emailjs
       .sendForm(
         "service_pqq0w65", 
@@ -24,6 +24,9 @@ function Contact() {
           alert("❌ Coś poszło nie tak...");
         }
       );
+  };*/ alert(
+      "Formularz został tymczasowo wyłączony.Skontaktuj sie telefonicznie."
+    );
   };
 
   return (
